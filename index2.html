@@ -9,9 +9,15 @@
   <body>
     <script>
       "use strict";
-      let name = prompt("Введите имя");
-      let admin = name;
-      alert("admin :" + +admin);
+      let a = +prompt("Введите 1е число");
+      let b = +prompt("Введите 2е число");
+      if (a >= 0 && b >= 0) {
+        alert(a - b);
+      } else if (a < 0 && b < 0) {
+        alert(a * b);
+      } else if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
+        alert(a + b);
+      }
     </script>
   </body>
 </html>
